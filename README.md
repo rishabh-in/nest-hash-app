@@ -51,6 +51,7 @@ This Git README.md provides an overview of the functionalities implemented in th
    - **Response Example:**
      ```json
      {
+       "message": "User added",
        "token": "generated_token_here"
      }
      ```
@@ -81,6 +82,7 @@ This Git README.md provides an overview of the functionalities implemented in th
    - **Response Example:**
      ```json
      {
+       "message": "Fetched all tokens",
        "tokens": [
          "token_1",
          "token_2",

@@ -32,7 +32,7 @@ export class UserService {
     const {token} = req.body;
     let userData = this.jwtService.verify(token);
     if(userData && userData.username) {
-      return {message: "User found", userData: {username: userData.username, number: userData.number}};
+      return {message: "User details retrieved successfully", userData: {username: userData.username, number: userData.number}};
     } else {
       return {message:"Token not found"}
     }
